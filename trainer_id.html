@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Trainer | Hillfit Bali</title>
+    <link rel="icon" type="image/png" href="logo-transparent.png">
+    
+    <!-- Tailwind CSS for rapid and exact styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'cf-primary': '#1e3a8a',
+                        'cf-accent': '#3b82f6',
+                        'cf-dark': '#0f172a',
+                        'cf-gray': '#333333'
+                    },
+                    fontFamily: {
+                        sans: ['Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-[#020617] text-white font-sans antialiased overflow-x-hidden pt-20">
+
+<!-- Navbar -->
+    <nav class="fixed top-0 left-0 w-full z-50 bg-[#020617]/95 backdrop-blur-md shadow-md border-b border-slate-800" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo -->
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="index_id.html">
+                        <img class="h-16 w-auto object-contain rounded" src="logo-transparent.png" alt="Hillfit Bali Logo">
+                    </a>
+                </div>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex space-x-8 items-center font-bold text-sm tracking-wide uppercase">
+                    <a href="index_id.html" class="text-white hover:text-cf-accent transition pb-1 border-b-2 border-transparent hover:border-cf-accent">Keanggotaan</a>
+                    <a href="trainer_id.html" class="text-cf-accent transition pb-1 border-b-2 border-cf-accent font-extrabold tracking-widest drop-shadow-[0_0_8px_rgba(59,130,246,0.8)]">Pelatih Pribadi</a>
+                    <a href="classes_id.html" class="text-white hover:text-cf-accent transition pb-1 border-b-2 border-transparent hover:border-cf-accent">Kelas</a>
+                    <a href="index_id.html" class="text-white hover:text-cf-accent transition pb-1 border-b-2 border-transparent hover:border-cf-accent">Karir</a>
+                    <a href="contact_id.html" class="text-white hover:text-cf-accent transition pb-1 border-b-2 border-transparent hover:border-cf-accent">Hubungi Kami</a>
+                    
+                    <a href="#" class="bg-cf-accent text-black px-6 py-2 rounded-full font-bold hover:bg-white transition ml-4">
+                        GABUNG SEKARANG
+                    </a>
+                    <div class="flex space-x-2 text-xs font-black tracking-widest pl-2">
+                        <a href="trainer.html" class="text-gray-400 hover:text-white transition">EN</a>
+                        <span class="text-gray-600">|</span>
+                        <a href="trainer_id.html" class="text-[#3b82f6] border-b border-[#3b82f6] drop-shadow-[0_0_8px_rgba(59,130,246,0.8)] pb-1">IN</a>
+                    </div>
+                </div>
+
+                <!-- Mobile menu button -->
+                <div class="md:hidden flex items-center">
+                    <button class="text-white hover:text-cf-accent p-2" id="mobile-menu-btn">
+                        <svg class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu (Hidden by default) -->
+    <div class="md:hidden fixed inset-0 z-40 bg-[#020617]/98 transform translate-x-full transition-transform duration-300 pt-24 px-6" id="mobile-menu">
+        <div class="flex flex-col space-y-6 text-xl font-bold uppercase tracking-wider">
+            <a href="index_id.html" class="text-white hover:text-cf-accent">Keanggotaan</a>
+            <a href="trainer_id.html" class="text-cf-accent border-l-4 border-cf-accent pl-3 drop-shadow-[0_0_8px_rgba(59,130,246,0.8)]">Pelatih Pribadi</a>
+            <a href="classes_id.html" class="text-white hover:text-cf-accent">Kelas</a>
+            <a href="index_id.html" class="text-white hover:text-cf-accent">Karir</a>
+            <a href="contact_id.html" class="text-white hover:text-cf-accent">Hubungi Kami</a>
+            <a href="#" class="bg-cf-accent text-black px-6 py-3 rounded-full font-bold text-center mt-6">GABUNG SEKARANG</a>
+        </div>
+    </div>
+
+<!-- Hero Section -->
+<section class="relative py-24 border-b border-slate-800/80 bg-slate-900/30 overflow-hidden">
+    <!-- Glowing background orb -->
+    <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-[#3b82f6]/10 rounded-full blur-[100px] z-0"></div>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+        <h1 class="text-5xl md:text-7xl font-extrabold text-white uppercase italic tracking-tight mb-6">
+            PELATIH <span class="text-[#3b82f6]">PRIBADI</span>
+        </h1>
+        <p class="text-xl text-gray-300 max-w-3xl mx-auto font-light">Tingkatkan latihan Anda dan capai tujuan fitness lebih cepat dengan bimbingan personal trainer profesional kami.</p>
+    </div>
+</section>
+
+
+<section class="py-20 bg-[#020617]">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex flex-col lg:flex-row items-center gap-16">
+            <div class="w-full lg:w-1/2">
+                <img src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Personal Trainer" class="rounded-2xl shadow-[0_0_30px_rgba(59,130,246,0.2)] object-cover border border-slate-700/50 h-[500px] w-full">
+            </div>
+            <div class="w-full lg:w-1/2 space-y-6">
+                <h2 class="text-3xl md:text-5xl font-extrabold text-white uppercase italic mb-8 leading-tight">Nge-gym lebih efektif bareng <span class="text-[#3b82f6]">Personal Trainer!</span></h2>
+                <div class="space-y-4 text-gray-300 text-lg font-light leading-relaxed border-l-4 border-[#3b82f6] pl-6">
+                    <p>Tiap individu datang dengan ekspektasi fisik yang unik, namun tidak semua paham merumuskan jalur terbaiknya. Tim Personal Trainer (PT) kami hadir khusus mendedikasikan diri untuk merancang rutinitas, membimbing progress, dan memacu potensi Anda hingga ke tujuan maksimal.</p>
+                    <p>Dengan latar belakang kualifikasi tinggi, pelatih kami piawai menyusun silabus latihan berstandar atletik, menjaga ritme mental Anda, serta membekali wawasan asupan kalori dan nutrisi yang paling rasional untuk diadaptasi oleh anatomi Anda.</p>
+                    <p>Setiap keringat dan pencapaian Anda akan dipantau lekat dengan metode terukur. Lewat pengawasan eksklusif PT Hillfit, proses evolusi tubuh Anda dipastikan menjadi jauh lebih presisi, sangat minim resiko cedera, dan berdampak nyata secara signifikan.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="py-24 bg-slate-900/30 border-t border-slate-800/80">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+            <h2 class="text-4xl md:text-5xl font-extrabold text-white uppercase italic mb-6">Temukan PT <span class="text-[#3b82f6]">Sesuai Kebutuhanmu!</span></h2>
+            <p class="text-gray-400 text-lg md:text-xl max-w-3xl mx-auto font-light">Capai tujuan body fitness impian lebih tangkas dengan bimbingan pelatih fisik bersertifikasi tinggi.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- PT 1 -->
+            <div class="bg-[#020617] rounded-xl border border-slate-700/80 p-8 hover:border-[#3b82f6] hover:shadow-[0_0_20px_rgba(59,130,246,0.15)] hover:-translate-y-2 transition-all duration-300 group flex flex-col items-center text-center">
+                <div class="w-24 h-24 rounded-full bg-slate-900 border-[3px] border-slate-700/80 group-hover:border-[#3b82f6] shadow-inner transition-colors duration-300 mb-6 flex items-center justify-center overflow-hidden mx-auto mt-2">
+                        <svg class="w-12 h-12 text-slate-500 group-hover:text-[#3b82f6] transition-colors" fill="currentColor" viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>
+                    </div>
+                <h3 class="text-3xl font-black text-white uppercase tracking-widest mb-3 group-hover:text-[#3b82f6] transition">ARYA</h3>
+                <p class="text-[11px] font-black text-[#3b82f6] uppercase tracking-widest border-b border-slate-700/80 w-full pb-4 mb-5 max-w-[90%] mx-auto italic drop-shadow-[0_0_8px_rgba(59,130,246,0.3)]">"No Pain, No Gain"</p>
+                <div class="flex flex-wrap justify-center gap-2 text-xs font-medium text-gray-300">
+                    <span class="bg-slate-800 px-3 py-1 rounded-full">Weight Management</span>
+                    <span class="bg-slate-800 px-3 py-1 rounded-full">Fat Loss</span>
+                    <span class="bg-slate-800 px-3 py-1 rounded-full">Muscle Building</span>
+                    <span class="bg-slate-800 px-3 py-1 rounded-full">Nutrition</span>
+                </div>
+            </div>
+            <!-- PT 2 -->
+            <div class="bg-[#020617] rounded-xl border border-slate-700/80 p-8 hover:border-[#3b82f6] hover:shadow-[0_0_20px_rgba(59,130,246,0.15)] hover:-translate-y-2 transition-all duration-300 group flex flex-col items-center text-center">
+                <div class="w-24 h-24 rounded-full bg-slate-900 border-[3px] border-slate-700/80 group-hover:border-[#3b82f6] shadow-inner transition-colors duration-300 mb-6 flex items-center justify-center overflow-hidden mx-auto mt-2">
+                        <svg class="w-12 h-12 text-slate-500 group-hover:text-[#3b82f6] transition-colors" fill="currentColor" viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>
+                    </div>
+                <h3 class="text-3xl font-black text-white uppercase tracking-widest mb-3 group-hover:text-[#3b82f6] transition">KEVIN</h3>
+                <p class="text-[11px] font-black text-[#3b82f6] uppercase tracking-widest border-b border-slate-700/80 w-full pb-4 mb-5 max-w-[90%] mx-auto italic drop-shadow-[0_0_8px_rgba(59,130,246,0.3)]">"Sweat Now, Shine Later"</p>
+                <div class="flex flex-wrap justify-center gap-2 text-xs font-medium text-gray-300">
+                    <span class="bg-slate-800 px-3 py-1 rounded-full">Muscle Building</span>
+                    <span class="bg-slate-800 px-3 py-1 rounded-full">Endurance</span>
+                    <span class="bg-slate-800 px-3 py-1 rounded-full">Boxing for Fitness</span>
+                    <span class="bg-slate-800 px-3 py-1 rounded-full">Fat Loss</span>
+                </div>
+            </div>
+            <!-- PT 3 -->
+            <div class="bg-[#020617] rounded-xl border border-slate-700/80 p-8 hover:border-[#3b82f6] hover:shadow-[0_0_20px_rgba(59,130,246,0.15)] hover:-translate-y-2 transition-all duration-300 group flex flex-col items-center text-center">
+                <div class="w-24 h-24 rounded-full bg-slate-900 border-[3px] border-slate-700/80 group-hover:border-[#3b82f6] shadow-inner transition-colors duration-300 mb-6 flex items-center justify-center overflow-hidden mx-auto mt-2">
+                        <svg class="w-12 h-12 text-slate-500 group-hover:text-[#3b82f6] transition-colors" fill="currentColor" viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>
+                    </div>
+                <h3 class="text-3xl font-black text-white uppercase tracking-widest mb-3 group-hover:text-[#3b82f6] transition">RIO</h3>
+                <p class="text-[11px] font-black text-[#3b82f6] uppercase tracking-widest border-b border-slate-700/80 w-full pb-4 mb-5 max-w-[90%] mx-auto italic drop-shadow-[0_0_8px_rgba(59,130,246,0.3)]">"Push Your Limits"</p>
+                <div class="flex flex-wrap justify-center gap-2 text-xs font-medium text-gray-300">
+                    <span class="bg-slate-800 px-3 py-1 rounded-full">Fat Loss</span>
+                    <span class="bg-slate-800 px-3 py-1 rounded-full">Power</span>
+                    <span class="bg-slate-800 px-3 py-1 rounded-full">Functional Training</span>
+                    <span class="bg-slate-800 px-3 py-1 rounded-full">Postural Alignment</span>
+                </div>
+            </div>
+            <!-- PT 4 -->
+            <div class="bg-[#020617] rounded-xl border border-slate-700/80 p-8 hover:border-[#3b82f6] hover:shadow-[0_0_20px_rgba(59,130,246,0.15)] hover:-translate-y-2 transition-all duration-300 group flex flex-col items-center text-center">
+                <div class="w-24 h-24 rounded-full bg-slate-900 border-[3px] border-slate-700/80 group-hover:border-[#3b82f6] shadow-inner transition-colors duration-300 mb-6 flex items-center justify-center overflow-hidden mx-auto mt-2">
+                        <svg class="w-12 h-12 text-slate-500 group-hover:text-[#3b82f6] transition-colors" fill="currentColor" viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>
+                    </div>
+                <h3 class="text-3xl font-black text-white uppercase tracking-widest mb-3 group-hover:text-[#3b82f6] transition">BARA</h3>
+                <p class="text-[11px] font-black text-[#3b82f6] uppercase tracking-widest border-b border-slate-700/80 w-full pb-4 mb-5 max-w-[90%] mx-auto italic drop-shadow-[0_0_8px_rgba(59,130,246,0.3)]">"Stronger Every Day"</p>
+                <div class="flex flex-wrap justify-center gap-2 text-xs font-medium text-gray-300">
+                    <span class="bg-slate-800 px-3 py-1 rounded-full">Rehab</span>
+                    <span class="bg-slate-800 px-3 py-1 rounded-full">Muscle Building</span>
+                    <span class="bg-slate-800 px-3 py-1 rounded-full">Freestyle Movement</span>
+                </div>
+            </div>
+            <!-- PT 5 -->
+            <div class="bg-[#020617] rounded-xl border border-slate-700/80 p-8 hover:border-[#3b82f6] hover:shadow-[0_0_20px_rgba(59,130,246,0.15)] hover:-translate-y-2 transition-all duration-300 group flex flex-col items-center text-center">
+                <div class="w-24 h-24 rounded-full bg-slate-900 border-[3px] border-slate-700/80 group-hover:border-[#3b82f6] shadow-inner transition-colors duration-300 mb-6 flex items-center justify-center overflow-hidden mx-auto mt-2">
+                        <svg class="w-12 h-12 text-slate-500 group-hover:text-[#3b82f6] transition-colors" fill="currentColor" viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>
+                    </div>
+                <h3 class="text-3xl font-black text-white uppercase tracking-widest mb-3 group-hover:text-[#3b82f6] transition">NADIA</h3>
+                <p class="text-[11px] font-black text-[#3b82f6] uppercase tracking-widest border-b border-slate-700/80 w-full pb-4 mb-5 max-w-[90%] mx-auto italic drop-shadow-[0_0_8px_rgba(59,130,246,0.3)]">"Train Like A Beast"</p>
+                <div class="flex flex-wrap justify-center gap-2 text-xs font-medium text-gray-300">
+                    <span class="bg-slate-800 px-3 py-1 rounded-full">Core Building</span>
+                    <span class="bg-slate-800 px-3 py-1 rounded-full">Endurance</span>
+                    <span class="bg-slate-800 px-3 py-1 rounded-full">Strength</span>
+                    <span class="bg-slate-800 px-3 py-1 rounded-full">Sport Performance</span>
+                </div>
+            </div>
+            <!-- PT 6 -->
+            <div class="bg-[#020617] rounded-xl border border-slate-700/80 p-8 hover:border-[#3b82f6] hover:shadow-[0_0_20px_rgba(59,130,246,0.15)] hover:-translate-y-2 transition-all duration-300 group flex flex-col items-center text-center">
+                <div class="w-24 h-24 rounded-full bg-slate-900 border-[3px] border-slate-700/80 group-hover:border-[#3b82f6] shadow-inner transition-colors duration-300 mb-6 flex items-center justify-center overflow-hidden mx-auto mt-2">
+                        <svg class="w-12 h-12 text-slate-500 group-hover:text-[#3b82f6] transition-colors" fill="currentColor" viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>
+                    </div>
+                <h3 class="text-3xl font-black text-white uppercase tracking-widest mb-3 group-hover:text-[#3b82f6] transition">DAVID</h3>
+                <p class="text-[11px] font-black text-[#3b82f6] uppercase tracking-widest border-b border-slate-700/80 w-full pb-4 mb-5 max-w-[90%] mx-auto italic drop-shadow-[0_0_8px_rgba(59,130,246,0.3)]">"Defy Your Doubts"</p>
+                <div class="flex flex-wrap justify-center gap-2 text-xs font-medium text-gray-300">
+                    <span class="bg-slate-800 px-3 py-1 rounded-full">Boxing for Fitness</span>
+                    <span class="bg-slate-800 px-3 py-1 rounded-full">Nutrition Program</span>
+                    <span class="bg-slate-800 px-3 py-1 rounded-full">Muscle Building</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Section 3.5: Harga Paket PT -->
+<section class="py-24 bg-[#020617] border-t border-slate-800/80">
+    <div class="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-16">
+            <h2 class="text-4xl md:text-5xl font-extrabold text-white uppercase italic mb-6">Pilih Sesi <span class="text-[#3b82f6]">Personal Trainer</span></h2>
+            <p class="text-gray-400 text-lg md:text-xl max-w-3xl mx-auto font-light">Pilihan harga konstan yang jelas untuk kesehatan jangka panjang Anda.</p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-4 gap-6 xl:gap-8">
+
+            <div class="rounded-2xl border border-slate-700/80 bg-slate-900/40 relative z-0 p-8 hover:border-[#3b82f6] hover:shadow-[0_0_25px_rgba(59,130,246,0.2)] hover:-translate-y-2 transition-all duration-300 flex flex-col text-center overflow-hidden group">
+                
+                <h3 class="text-3xl font-black text-white uppercase tracking-wider mb-2 group-hover:text-[#3b82f6] transition">4 SESI</h3>
+                <p class="text-gray-400 text-xs mb-6 border-b border-slate-800 pb-6 uppercase tracking-widest font-normal">Masa Aktif 1 Bulan</p>
+                
+                <div class="flex-grow flex flex-col justify-center">
+                    <p class="text-slate-500 line-through text-sm mb-1 font-medium">Rp 1.250.000</p>
+                    <p class="text-3xl font-extrabold text-white mb-2 tracking-tight">Rp 1.000.000</p>
+                    <div class="bg-[#3b82f6]/10 py-3 rounded-lg border border-[#3b82f6]/20 mt-3 drop-shadow-sm">
+                        <p class="text-[#3b82f6] font-black text-lg">Rp 250.000 <span class="text-[10px] font-medium text-[#3b82f6]/80 uppercase tracking-widest block mt-1">Per Sesi</span></p>
+                    </div>
+                </div>
+                
+                <a href="#" class="mt-8 block w-full bg-slate-800 text-white hover:bg-slate-700 border border-slate-600/50 font-bold py-3.5 rounded-full transition-all duration-300 uppercase tracking-widest text-xs tracking-widest">PILIH PAKET</a>
+            </div>
+            <div class="rounded-2xl border border-slate-700/80 bg-slate-900/40 relative z-0 p-8 hover:border-[#3b82f6] hover:shadow-[0_0_25px_rgba(59,130,246,0.2)] hover:-translate-y-2 transition-all duration-300 flex flex-col text-center overflow-hidden group">
+                
+                <h3 class="text-3xl font-black text-white uppercase tracking-wider mb-2 group-hover:text-[#3b82f6] transition">8 SESI</h3>
+                <p class="text-gray-400 text-xs mb-6 border-b border-slate-800 pb-6 uppercase tracking-widest font-normal">Masa Aktif 1 Bulan</p>
+                
+                <div class="flex-grow flex flex-col justify-center">
+                    <p class="text-slate-500 line-through text-sm mb-1 font-medium">Rp 2.500.000</p>
+                    <p class="text-3xl font-extrabold text-white mb-2 tracking-tight">Rp 2.000.000</p>
+                    <div class="bg-[#3b82f6]/10 py-3 rounded-lg border border-[#3b82f6]/20 mt-3 drop-shadow-sm">
+                        <p class="text-[#3b82f6] font-black text-lg">Rp 250.000 <span class="text-[10px] font-medium text-[#3b82f6]/80 uppercase tracking-widest block mt-1">Per Sesi</span></p>
+                    </div>
+                </div>
+                
+                <a href="#" class="mt-8 block w-full bg-slate-800 text-white hover:bg-slate-700 border border-slate-600/50 font-bold py-3.5 rounded-full transition-all duration-300 uppercase tracking-widest text-xs tracking-widest">PILIH PAKET</a>
+            </div>
+            <div class="rounded-2xl border border-slate-700/80 bg-slate-900/40 relative z-0 p-8 hover:border-[#3b82f6] hover:shadow-[0_0_25px_rgba(59,130,246,0.2)] hover:-translate-y-2 transition-all duration-300 flex flex-col text-center overflow-hidden group">
+                
+                <h3 class="text-3xl font-black text-white uppercase tracking-wider mb-2 group-hover:text-[#3b82f6] transition">16 SESI</h3>
+                <p class="text-gray-400 text-xs mb-6 border-b border-slate-800 pb-6 uppercase tracking-widest font-normal">Masa Aktif 2 Bulan</p>
+                
+                <div class="flex-grow flex flex-col justify-center">
+                    <p class="text-slate-500 line-through text-sm mb-1 font-medium">Rp 5.000.000</p>
+                    <p class="text-3xl font-extrabold text-white mb-2 tracking-tight">Rp 4.000.000</p>
+                    <div class="bg-[#3b82f6]/10 py-3 rounded-lg border border-[#3b82f6]/20 mt-3 drop-shadow-sm">
+                        <p class="text-[#3b82f6] font-black text-lg">Rp 250.000 <span class="text-[10px] font-medium text-[#3b82f6]/80 uppercase tracking-widest block mt-1">Per Sesi</span></p>
+                    </div>
+                </div>
+                
+                <a href="#" class="mt-8 block w-full bg-slate-800 text-white hover:bg-slate-700 border border-slate-600/50 font-bold py-3.5 rounded-full transition-all duration-300 uppercase tracking-widest text-xs tracking-widest">PILIH PAKET</a>
+            </div>
+            <div class="rounded-2xl border border-[#3b82f6] shadow-[0_0_25px_rgba(59,130,246,0.3)] bg-slate-900/90 scale-[1.03] z-10 p-8 hover:border-[#3b82f6] hover:shadow-[0_0_25px_rgba(59,130,246,0.2)] hover:-translate-y-2 transition-all duration-300 flex flex-col text-center overflow-hidden group">
+                <div class="absolute top-0 right-0 bg-white text-[#3b82f6] text-[10px] font-black uppercase tracking-widest py-1.5 px-10 translate-x-8 translate-y-3 rotate-45 shadow-[0_4px_10px_rgba(255,255,255,0.2)] z-10 block pointer-events-none">POPULAR</div>
+                <h3 class="text-3xl font-black text-white uppercase tracking-wider mb-2 group-hover:text-[#3b82f6] transition">24 SESI</h3>
+                <p class="text-gray-400 text-xs mb-6 border-b border-slate-800 pb-6 uppercase tracking-widest font-normal">Masa Aktif 3 Bulan</p>
+                
+                <div class="flex-grow flex flex-col justify-center">
+                    <p class="text-slate-500 line-through text-sm mb-1 font-medium">Rp 7.500.000</p>
+                    <p class="text-3xl font-extrabold text-white mb-2 tracking-tight">Rp 6.000.000</p>
+                    <div class="bg-[#3b82f6]/10 py-3 rounded-lg border border-[#3b82f6]/20 mt-3 drop-shadow-sm">
+                        <p class="text-[#3b82f6] font-black text-lg">Rp 250.000 <span class="text-[10px] font-medium text-[#3b82f6]/80 uppercase tracking-widest block mt-1">Per Sesi</span></p>
+                    </div>
+                </div>
+                
+                <a href="#" class="mt-8 block w-full bg-gradient-to-r from-[#2563eb] to-[#3b82f6] text-white hover:from-[#1d4ed8] hover:to-[#2563eb] shadow-[0_0_15px_rgba(59,130,246,0.6)] transform hover:scale-105 border border-white/10 font-bold py-3.5 rounded-full transition-all duration-300 uppercase tracking-widest text-xs tracking-widest">PILIH PAKET</a>
+            </div>
+            <div class="rounded-2xl border border-slate-700/80 bg-slate-900/40 relative z-0 p-8 hover:border-[#3b82f6] hover:shadow-[0_0_25px_rgba(59,130,246,0.2)] hover:-translate-y-2 transition-all duration-300 flex flex-col text-center overflow-hidden group">
+                
+                <h3 class="text-3xl font-black text-white uppercase tracking-wider mb-2 group-hover:text-[#3b82f6] transition">36 SESI</h3>
+                <p class="text-gray-400 text-xs mb-6 border-b border-slate-800 pb-6 uppercase tracking-widest font-normal">Masa Aktif 4 Bulan</p>
+                
+                <div class="flex-grow flex flex-col justify-center">
+                    <p class="text-slate-500 line-through text-sm mb-1 font-medium">Rp 11.250.000</p>
+                    <p class="text-3xl font-extrabold text-white mb-2 tracking-tight">Rp 9.000.000</p>
+                    <div class="bg-[#3b82f6]/10 py-3 rounded-lg border border-[#3b82f6]/20 mt-3 drop-shadow-sm">
+                        <p class="text-[#3b82f6] font-black text-lg">Rp 250.000 <span class="text-[10px] font-medium text-[#3b82f6]/80 uppercase tracking-widest block mt-1">Per Sesi</span></p>
+                    </div>
+                </div>
+                
+                <a href="#" class="mt-8 block w-full bg-slate-800 text-white hover:bg-slate-700 border border-slate-600/50 font-bold py-3.5 rounded-full transition-all duration-300 uppercase tracking-widest text-xs tracking-widest">PILIH PAKET</a>
+            </div>
+            <div class="rounded-2xl border border-slate-700/80 bg-slate-900/40 relative z-0 p-8 hover:border-[#3b82f6] hover:shadow-[0_0_25px_rgba(59,130,246,0.2)] hover:-translate-y-2 transition-all duration-300 flex flex-col text-center overflow-hidden group">
+                
+                <h3 class="text-3xl font-black text-white uppercase tracking-wider mb-2 group-hover:text-[#3b82f6] transition">48 SESI</h3>
+                <p class="text-gray-400 text-xs mb-6 border-b border-slate-800 pb-6 uppercase tracking-widest font-normal">Masa Aktif 6 Bulan</p>
+                
+                <div class="flex-grow flex flex-col justify-center">
+                    <p class="text-slate-500 line-through text-sm mb-1 font-medium">Rp 15.000.000</p>
+                    <p class="text-3xl font-extrabold text-white mb-2 tracking-tight">Rp 12.000.000</p>
+                    <div class="bg-[#3b82f6]/10 py-3 rounded-lg border border-[#3b82f6]/20 mt-3 drop-shadow-sm">
+                        <p class="text-[#3b82f6] font-black text-lg">Rp 250.000 <span class="text-[10px] font-medium text-[#3b82f6]/80 uppercase tracking-widest block mt-1">Per Sesi</span></p>
+                    </div>
+                </div>
+                
+                <a href="#" class="mt-8 block w-full bg-slate-800 text-white hover:bg-slate-700 border border-slate-600/50 font-bold py-3.5 rounded-full transition-all duration-300 uppercase tracking-widest text-xs tracking-widest">PILIH PAKET</a>
+            </div>
+            <div class="rounded-2xl border border-slate-700/80 bg-slate-900/40 relative z-0 p-8 hover:border-[#3b82f6] hover:shadow-[0_0_25px_rgba(59,130,246,0.2)] hover:-translate-y-2 transition-all duration-300 flex flex-col text-center overflow-hidden group">
+                
+                <h3 class="text-3xl font-black text-white uppercase tracking-wider mb-2 group-hover:text-[#3b82f6] transition">72 SESI</h3>
+                <p class="text-gray-400 text-xs mb-6 border-b border-slate-800 pb-6 uppercase tracking-widest font-normal">Masa Aktif 9 Bulan</p>
+                
+                <div class="flex-grow flex flex-col justify-center">
+                    <p class="text-slate-500 line-through text-sm mb-1 font-medium">Rp 22.500.000</p>
+                    <p class="text-3xl font-extrabold text-white mb-2 tracking-tight">Rp 18.000.000</p>
+                    <div class="bg-[#3b82f6]/10 py-3 rounded-lg border border-[#3b82f6]/20 mt-3 drop-shadow-sm">
+                        <p class="text-[#3b82f6] font-black text-lg">Rp 250.000 <span class="text-[10px] font-medium text-[#3b82f6]/80 uppercase tracking-widest block mt-1">Per Sesi</span></p>
+                    </div>
+                </div>
+                
+                <a href="#" class="mt-8 block w-full bg-slate-800 text-white hover:bg-slate-700 border border-slate-600/50 font-bold py-3.5 rounded-full transition-all duration-300 uppercase tracking-widest text-xs tracking-widest">PILIH PAKET</a>
+            </div>
+            <div class="rounded-2xl border border-slate-700/80 bg-slate-900/40 relative z-0 p-8 hover:border-[#3b82f6] hover:shadow-[0_0_25px_rgba(59,130,246,0.2)] hover:-translate-y-2 transition-all duration-300 flex flex-col text-center overflow-hidden group">
+                
+                <h3 class="text-3xl font-black text-white uppercase tracking-wider mb-2 group-hover:text-[#3b82f6] transition">96 SESI</h3>
+                <p class="text-gray-400 text-xs mb-6 border-b border-slate-800 pb-6 uppercase tracking-widest font-normal">Masa Aktif 12 Bulan</p>
+                
+                <div class="flex-grow flex flex-col justify-center">
+                    <p class="text-slate-500 line-through text-sm mb-1 font-medium">Rp 30.000.000</p>
+                    <p class="text-3xl font-extrabold text-white mb-2 tracking-tight">Rp 24.000.000</p>
+                    <div class="bg-[#3b82f6]/10 py-3 rounded-lg border border-[#3b82f6]/20 mt-3 drop-shadow-sm">
+                        <p class="text-[#3b82f6] font-black text-lg">Rp 250.000 <span class="text-[10px] font-medium text-[#3b82f6]/80 uppercase tracking-widest block mt-1">Per Sesi</span></p>
+                    </div>
+                </div>
+                
+                <a href="#" class="mt-8 block w-full bg-slate-800 text-white hover:bg-slate-700 border border-slate-600/50 font-bold py-3.5 rounded-full transition-all duration-300 uppercase tracking-widest text-xs tracking-widest">PILIH PAKET</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="py-24 bg-slate-900/30 border-t border-slate-800/50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-4xl md:text-5xl font-extrabold text-white text-center uppercase italic mb-16">Testimoni <span class="text-[#3b82f6]">Member Kami</span></h2>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Testi 1 -->
+            <div class="bg-slate-900/40 p-8 rounded-2xl border border-slate-800/80 hover:border-[#3b82f6] transition">
+                <div class="flex items-center space-x-4 mb-6">
+                    <div class="w-12 h-12 rounded-full bg-[#3b82f6] flex items-center justify-center text-white font-bold text-xl uppercase shadow-lg">B</div>
+                    <div>
+                        <h4 class="font-bold text-white text-lg tracking-wide uppercase">BAGAS</h4>
+                        <p class="text-[#3b82f6] text-xs">@bagas_id</p>
+                    </div>
+                </div>
+                <p class="text-gray-300 font-light leading-relaxed italic text-sm">"Dari awal ketemu coach, langsung klop, metode latihan nya cocok banget dengan badan saya. Orangnya seru juga. Selalu semangat mau latihan kalau udah janjian."</p>
+            </div>
+            <!-- Testi 2 -->
+            <div class="bg-slate-900/40 p-8 rounded-2xl border border-slate-800/80 hover:border-[#3b82f6] transition">
+                <div class="flex items-center space-x-4 mb-6">
+                    <div class="w-12 h-12 rounded-full bg-[#3b82f6] flex items-center justify-center text-white font-bold text-xl uppercase shadow-lg">A</div>
+                    <div>
+                        <h4 class="font-bold text-white text-lg tracking-wide uppercase">ADIL</h4>
+                        <p class="text-[#3b82f6] text-xs">@shierymelinda</p>
+                    </div>
+                </div>
+                <p class="text-gray-300 font-light leading-relaxed italic text-sm">"Coach paham banget program apa yang cocok dengan goal saya. Memotivasi saya untuk selalu ada perkembangan, cara menjelaskannya juga mudah dipahami dan friendly banget."</p>
+            </div>
+            <!-- Testi 3 -->
+            <div class="bg-slate-900/40 p-8 rounded-2xl border border-slate-800/80 hover:border-[#3b82f6] transition">
+                <div class="flex items-center space-x-4 mb-6">
+                    <div class="w-12 h-12 rounded-full bg-[#3b82f6] flex items-center justify-center text-white font-bold text-xl uppercase shadow-lg">K</div>
+                    <div>
+                        <h4 class="font-bold text-white text-lg tracking-wide uppercase">KEKE</h4>
+                        <p class="text-[#3b82f6] text-xs">@misslon02</p>
+                    </div>
+                </div>
+                <p class="text-gray-300 font-light leading-relaxed italic text-sm">"Aku jadi lebih percaya diri setelah join program PT di Hillfit. Punggung aku awalnya bungkuk sekarang jadi tegap, perut aku juga jadi rata. Ini pasti susah banget bisa aku dapetin kalau latihan sendiri."</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="bg-[#020617] border-t border-slate-800 pt-16 pb-12">
+        <div class="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12 lg:gap-8 mb-8 text-sm">
+                <!-- Col 1: Logo moved to left side of quick links -->
+                <div class="lg:col-span-1 flex flex-col justify-start items-start md:pr-4">
+                    <a href="index_id.html" class="inline-block mb-6">
+                        <img src="logo-transparent.png" alt="Hillfit Logo" class="h-20 lg:h-24 w-auto object-contain transition-transform duration-500 hover:scale-105 filter drop-shadow-[0_0_15px_rgba(59,130,246,0.3)]">
+                    </a>
+                    <p class="text-gray-400 text-xs leading-relaxed max-w-[200px] font-medium">
+                        Elevate your fitness. Realize a future defined by vitality at Hillfit Bali.
+                    </p>
+                </div>
+
+                <!-- Col 2: Links -->
+                <div class="lg:col-span-1 lg:pl-4">
+                    <h4 class="font-bold text-white uppercase mb-6 tracking-wide text-base border-b border-slate-800 pb-3 inline-block">Tautan Cepat</h4>
+                    <ul class="space-y-4 text-gray-400">
+                        <li><a href="index_id.html" class="hover:text-white transition">Keanggotaan</a></li>
+                        <li><a href="trainer_id.html" class="hover:text-white transition">Pelatih Pribadi</a></li>
+                        <li><a href="classes_id.html" class="hover:text-white transition">Kelas</a></li>
+                        <li><a href="index_id.html" class="hover:text-white transition">Karir</a></li>
+                        <li><a href="index_id.html" class="hover:text-white transition">Hubungi Kami</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Col 3: Socials -->
+                <div class="lg:col-span-1">
+                    <h4 class="font-bold text-white uppercase mb-6 tracking-wide text-base border-b border-slate-800 pb-3 inline-block">Terhubung Bersama Kami</h4>
+                    <ul class="space-y-5 text-gray-400">
+                        <li><a href="#" class="flex items-center hover:text-[#3b82f6] transition group"><svg class="w-5 h-5 mr-4 transition-transform group-hover:scale-110" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg> Instagram</a></li>
+                        <li><a href="#" class="flex items-center hover:text-[#3b82f6] transition group"><svg class="w-5 h-5 mr-4 transition-transform group-hover:scale-110" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"/></svg> Website</a></li>
+                        <li><a href="#" class="flex items-center hover:text-[#3b82f6] transition group"><svg class="w-5 h-5 mr-4 transition-transform group-hover:scale-110" fill="currentColor" viewBox="0 0 24 24"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/></svg> Twitter</a></li>
+                        <li><a href="#" class="flex items-center hover:text-[#3b82f6] transition group"><svg class="w-5 h-5 mr-4 transition-transform group-hover:scale-110" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12.013 2.02A10 10 0 0 0 2.015 12.02a10 10 0 0 0 1.34 5.01L2 22l5.09-1.34a10 10 0 1 0 4.923-18.64zm0 18.36a8.38 8.38 0 0 1-4.28-1.17l-.31-.18-3.18.84.85-3.11-.2-.32a8.38 8.38 0 1 1 7.12 3.94zm4.61-6.32c-.25-.13-1.5-.74-1.73-.83-.23-.08-.41-.12-.58.13-.17.25-.66.83-.8 1-.15.17-.3.19-.55.06a6.83 6.83 0 0 1-3.4-2.1c-.29-.44.29-.42.78-1.39.08-.16.04-.3-.02-.43-.06-.13-.58-1.4-.8-1.92-.21-.5-.43-.43-.59-.44h-.5c-.17 0-.45.06-.68.32-.23.25-.88.86-.88 2.1 0 1.24.9 2.44 1.03 2.62.13.17 1.78 2.76 4.35 3.86 1.7.73 2.22.8 3.03.68.65-.09 1.5-.61 1.71-1.2s.21-1.12.15-1.23c-.06-.11-.23-.17-.48-.3z"/>
+                        </svg> WhatsApp</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Col 4 & 5: Map span over 2 columns -->
+                <div class="lg:col-span-2 flex flex-col sm:flex-row items-center sm:items-start justify-center lg:justify-end space-y-6 sm:space-y-0 sm:space-x-8 pt-4 lg:pt-0">
+                    <div class="text-center sm:text-right flex flex-col justify-start pt-2">
+                        <h5 class="text-white font-extrabold uppercase tracking-widest mb-3 text-lg border-b border-slate-800 pb-3">Hillfit Bali</h5>
+                        <p class="text-gray-400 text-sm md:text-sm max-w-[280px] leading-relaxed mb-4">
+                            Jl. Dharmawangsa, Kutuh, Kec. Kuta Selatan,<br>Kabupaten Badung, Bali 80361
+                        </p>
+                        <!-- Rute link -->
+                        <a href="https://maps.app.goo.gl/Gc9kSUTRbWX3CfaU9" target="_blank" class="inline-flex items-center justify-center sm:justify-end text-[#3b82f6] hover:text-white transition font-bold uppercase tracking-wider text-xs group">
+                            Directions 
+                            <svg class="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+                        </a>
+                    </div>
+                    <!-- Square Map -->
+                    <div class="w-56 h-56 rounded-2xl overflow-hidden border-2 border-slate-700/80 hover:border-[#3b82f6] hover:shadow-[0_0_25px_rgba(59,130,246,0.2)] transition-all flex-shrink-0 bg-slate-900 mx-auto sm:mx-0">
+                        <iframe src="https://maps.google.com/maps?q=Hillfit%20Bali&t=&z=16&ie=UTF8&iwloc=&output=embed" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center text-xs text-gray-500 border-t border-slate-800/80 pt-8 mt-2">
+                <p>&copy; 2026 Hillfit Bali. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+<script src="script.js"></script>
+</body>
+</html>

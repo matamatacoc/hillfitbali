@@ -1,0 +1,42 @@
+/* Custom Animations and Overrides for Hillfit Bali */
+@import url('https://fonts.googleapis.com/css2?family=Helvetica+Neue:ital,wght@0,300;0,400;0,500;0,700;0,800;1,300;1,400;1,500;1,700;1,800&display=swap');
+
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background: #020617;
+}
+::-webkit-scrollbar-thumb {
+    background: #1e3a8a;
+    border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #3b82f6;
+}
+
+/* Navbar active scroll state */
+nav.scrolled {
+    background-color: rgba(2, 6, 23, 0.95) !important;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    height: 70px !important;
+}
+nav.scrolled .h-10 {
+    height: 2rem !important; /* shrink logo slightly */
+}
+
+/* General Utilities for CF Theme */
+.text-shadow {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.text-stroke {
+    -webkit-text-stroke: 1px white;
+    color: transparent;
+}
