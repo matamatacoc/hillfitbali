@@ -27,11 +27,12 @@
     </script>
 
     <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body class="bg-[#020617] text-white font-sans antialiased overflow-x-hidden pt-20">
 
 <!-- Navbar -->
-    <nav class="fixed top-0 left-0 w-full z-50 transition-all duration-300 bg-[#020617] md:bg-transparent md:bg-[#020617]/40 shadow-sm border-b border-slate-800" id="navbar">
+    <nav class="fixed top-0 left-0 w-full z-50 transition-all duration-500 bg-[#020617]/85 backdrop-blur-xl border-b border-white/5 shadow-[0_4px_30px_rgba(0,0,0,0.5)]" id="navbar">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-20">
                 <!-- Logo -->
@@ -89,7 +90,7 @@
     <!-- Glowing background orb -->
     <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-[#3b82f6]/10 rounded-full blur-[100px] z-0"></div>
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
-        <h1 class="text-5xl md:text-7xl font-extrabold text-white uppercase italic tracking-tight mb-6">
+        <h1 data-aos="fade-down" class="text-5xl md:text-7xl font-extrabold text-white uppercase italic tracking-tight mb-6">
             PELATIH <span class="text-[#3b82f6]">PRIBADI</span>
         </h1>
         <p class="text-xl text-gray-300 max-w-3xl mx-auto font-light">Tingkatkan latihan Anda dan capai tujuan fitness lebih cepat dengan bimbingan personal trainer profesional kami.</p>
@@ -118,8 +119,8 @@
 
 <section class="py-24 bg-slate-900/30 border-t border-slate-800/80">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center mb-16">
-            <h2 class="text-4xl md:text-5xl font-extrabold text-white uppercase italic mb-6">Temukan PT <span class="text-[#3b82f6]">Sesuai Kebutuhanmu!</span></h2>
+        <div class="text-center mb-16" data-aos="fade-up">
+            <h2 data-aos="fade-right" class="text-4xl md:text-5xl font-extrabold text-white uppercase italic mb-6">Temukan PT <span class="text-[#3b82f6]">Sesuai Kebutuhanmu!</span></h2>
             <p class="text-gray-400 text-lg md:text-xl max-w-3xl mx-auto font-light">Capai tujuan body fitness impian lebih tangkas dengan bimbingan pelatih fisik bersertifikasi tinggi.</p>
         </div>
 
@@ -214,8 +215,8 @@
 <!-- Section 3.5: Harga Paket PT -->
 <section class="py-24 bg-[#020617] border-t border-slate-800/80">
     <div class="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center mb-16">
-            <h2 class="text-4xl md:text-5xl font-extrabold text-white uppercase italic mb-6">Pilih Sesi <span class="text-[#3b82f6]">Personal Trainer</span></h2>
+        <div class="text-center mb-16" data-aos="fade-up">
+            <h2 data-aos="fade-right" class="text-4xl md:text-5xl font-extrabold text-white uppercase italic mb-6">Pilih Sesi <span class="text-[#3b82f6]">Personal Trainer</span></h2>
             <p class="text-gray-400 text-lg md:text-xl max-w-3xl mx-auto font-light">Pilihan harga konstan yang jelas untuk kesehatan jangka panjang Anda.</p>
         </div>
 
@@ -452,6 +453,8 @@
         </div>
     </footer>
 
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>AOS.init({duration: 800, once: true, offset: 100});</script>
 <script src="script.js"></script>
 </body>
 </html>

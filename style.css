@@ -21,15 +21,7 @@ body {
     background: #3b82f6;
 }
 
-/* Navbar active scroll state */
-nav.scrolled {
-    background-color: rgba(2, 6, 23, 0.95) !important;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
-    height: 70px !important;
-}
-nav.scrolled .h-10 {
-    height: 2rem !important; /* shrink logo slightly */
-}
+/* Navbar removed to use tailwind natively */
 
 /* General Utilities for CF Theme */
 .text-shadow {

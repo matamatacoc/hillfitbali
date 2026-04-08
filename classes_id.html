@@ -27,11 +27,12 @@
     </script>
 
     <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body class="bg-[#020617] text-white font-sans antialiased overflow-x-hidden pt-20">
 
 <!-- Navbar -->
-    <nav class="fixed top-0 left-0 w-full z-50 transition-all duration-300 bg-[#020617] md:bg-transparent md:bg-[#020617]/40 shadow-sm border-b border-slate-800" id="navbar">
+    <nav class="fixed top-0 left-0 w-full z-50 transition-all duration-500 bg-[#020617]/85 backdrop-blur-xl border-b border-white/5 shadow-[0_4px_30px_rgba(0,0,0,0.5)]" id="navbar">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-20">
                 <!-- Logo -->
@@ -90,7 +91,7 @@
     <!-- Glowing background orb -->
     <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-[#3b82f6]/10 rounded-full blur-[100px] z-0"></div>
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
-        <h1 class="text-5xl md:text-7xl font-extrabold text-white uppercase italic tracking-tight mb-6">
+        <h1 data-aos="fade-down" class="text-5xl md:text-7xl font-extrabold text-white uppercase italic tracking-tight mb-6">
             KELAS <span class="text-[#3b82f6]">FITNESS</span>
         </h1>
         <p class="text-xl text-gray-300 max-w-3xl mx-auto font-light">Jelajahi kelas-kelas spesifik Hillfit yang dirancang intensif untuk membakar kalori, membangun formasi otot, dan memacu adrenalin Anda ke batas maksimal.</p>
@@ -105,7 +106,7 @@
                 <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Group Classes" class="rounded-2xl shadow-[0_0_30px_rgba(59,130,246,0.2)] object-cover border border-slate-700/50 h-[450px] w-full">
             </div>
             <div class="w-full lg:w-1/2 space-y-6">
-                <h2 class="text-4xl md:text-5xl font-extrabold text-white uppercase italic mb-8 leading-tight">Bangkitkan Energi Lewat <span class="text-[#3b82f6]">Grup Kelas!</span></h2>
+                <h2 data-aos="fade-right" class="text-4xl md:text-5xl font-extrabold text-white uppercase italic mb-8 leading-tight">Bangkitkan Energi Lewat <span class="text-[#3b82f6]">Grup Kelas!</span></h2>
                 <div class="space-y-4 text-gray-300 text-lg font-light leading-relaxed border-l-4 border-[#3b82f6] pl-6">
                     <p>Berlatih bersama komunitas sejawat adalah salah satu instrumen terampuh untuk mendongkrak motivasi diri. Hillfit Bali menyediakan ruangan studio kelas-A dengan jadwal harian intensif yang dipandu langsung oleh instruktur bereputasi elit.</p>
                     <p>Kami telah memformulasi 3 kategori grup kelas terpopuler untuk menyesuaikan preferensi dan target fisik Anda yang beragam: <strong>Dance, Strength, dan Cardio</strong>. Seluruh sesi tersebut dirancang menyatu padu diiringi musik beroktan tinggi serta iluminasi visual studio nan futuristik.</p>
@@ -119,12 +120,12 @@
 <!-- Section 3: The Classes -->
 <section class="py-28 bg-slate-900/30 border-t border-slate-800/80">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="text-center mb-16">
-            <h2 class="text-4xl md:text-5xl font-extrabold text-white uppercase italic mb-6">Pilih <span class="text-[#3b82f6]">Disiplinmu!</span></h2>
+        <div class="text-center mb-16" data-aos="fade-up">
+            <h2 data-aos="fade-right" class="text-4xl md:text-5xl font-extrabold text-white uppercase italic mb-6">Pilih <span class="text-[#3b82f6]">Disiplinmu!</span></h2>
             <p class="text-gray-400 text-lg md:text-xl max-w-3xl mx-auto font-light">Tiga kurikulum utama kebanggaan kami yang dirakit khusus untuk transformasi tubuh Anda secara masif.</p>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 xl:gap-12">
+        <div data-aos="fade-up" data-aos-delay="100" class="grid grid-cols-1 md:grid-cols-3 gap-8 xl:gap-12">
             <!-- DANCE Class -->
             <div class="bg-[#020617] rounded-3xl border border-slate-700/80 hover:border-[#3b82f6] hover:shadow-[0_0_30px_rgba(59,130,246,0.2)] hover:-translate-y-2 transition-all duration-300 overflow-hidden group flex flex-col">
                 <div class="h-64 overflow-hidden relative">
@@ -256,6 +257,8 @@
         </div>
     </footer>
 
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>AOS.init({duration: 800, once: true, offset: 100});</script>
 <script src="script.js"></script>
 </body>
 </html>

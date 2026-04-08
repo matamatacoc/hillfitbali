@@ -27,11 +27,12 @@
     </script>
 
     <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body class="bg-[#020617] text-white font-sans antialiased overflow-x-hidden pt-20">
 
 <!-- Navbar -->
-    <nav class="fixed top-0 left-0 w-full z-50 transition-all duration-300 bg-[#020617] md:bg-transparent md:bg-[#020617]/40 shadow-sm border-b border-slate-800" id="navbar">
+    <nav class="fixed top-0 left-0 w-full z-50 transition-all duration-500 bg-[#020617]/85 backdrop-blur-xl border-b border-white/5 shadow-[0_4px_30px_rgba(0,0,0,0.5)]" id="navbar">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-20">
                 <!-- Logo -->
@@ -90,10 +91,10 @@
     <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=1920&q=80')] bg-cover bg-center opacity-[0.05] mix-blend-overlay"></div>
     <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-[#3b82f6]/10 rounded-full blur-[100px] z-0"></div>
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
-        <h1 class="text-5xl md:text-7xl font-extrabold text-white uppercase italic tracking-tight mb-6">
+        <h1 data-aos="fade-down" class="text-5xl md:text-7xl font-extrabold text-white uppercase italic tracking-tight mb-6">
             CONTACT <span class="text-[#3b82f6]">US</span>
         </h1>
-        <p class="text-xl text-gray-300 max-w-2xl mx-auto font-light leading-relaxed">We are always ready to listen. Contact us for any detailed inquiry regarding membership plans, class schedules, or career ventures.</p>
+        <p data-aos="fade-up" data-aos-delay="200" class="text-xl text-gray-300 max-w-2xl mx-auto font-light leading-relaxed">We are always ready to listen. Contact us for any detailed inquiry regarding membership plans, class schedules, or career ventures.</p>
     </div>
 </section>
 
@@ -234,6 +235,8 @@
         </div>
     </footer>
 
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>AOS.init({duration: 800, once: true, offset: 100});</script>
 <script src="script.js"></script>
 </body>
 </html>

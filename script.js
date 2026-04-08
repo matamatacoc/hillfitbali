@@ -1,14 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // Navbar scroll effect
+    // Navbar uses native Tailwind glassmorphism fixed styles
     const navbar = document.getElementById('navbar');
-    
-    window.addEventListener('scroll', () => {
-        if (window.scrollY > 50) {
-            navbar.classList.add('scrolled');
-        } else {
-            navbar.classList.remove('scrolled');
-        }
-    });
 
     // Mobile menu toggle
     const mobileBtn = document.getElementById('mobile-menu-btn');
